@@ -17,8 +17,8 @@ This project aims to develop an automated kidney stone detection system using de
 
 The project directory is organized as follows:
 
-Kidney_Stone_Detection_Model/
-│
+Kidney_Stone_Detection_Model/  
+│  
 ├── Dataset/  
 │   ├── Train/  
 │   │   ├── Kidney_stone/  
