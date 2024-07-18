@@ -75,5 +75,5 @@ After evaluating the model on the test set, the following metrics were obtained:
 - Recall: 0.9364
 - F1 Score: 0.9362
 
-##Acknowledgments
+## Acknowledgments
 This project utilizes the Fastai library and ResNet34 architecture, both of which are instrumental in building and training the deep learning model for kidney stone detection. Special thanks to the creators and maintainers of these tools and libraries.
