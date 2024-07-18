@@ -19,20 +19,20 @@ The project directory is organized as follows:
 
 Kidney_Stone_Detection_Model/
 │
-├── Dataset/
-│   ├── Train/
-│   │   ├── Kidney_stone/
-│   │   └── Normal/
-│   ├── Test/
-│   │   ├── Kidney_stone/
-│   │   └── Normal/
-│
-├── Saved_Models/
-│   └── models/
-│       └── Mark_IV_epoch_10.pth
-│
-├── Kidney_stone_detection_model.ipynb
-└── README.md
+├── Dataset/  
+│   ├── Train/  
+│   │   ├── Kidney_stone/  
+│   │   └── Normal/  
+│   ├── Test/  
+│   │   ├── Kidney_stone/  
+│   │   └── Normal/  
+│  
+├── Saved_Models/  
+│   └── models/  
+│       └── Mark_IV_epoch_10.pth  
+│  
+├── Kidney_stone_detection_model.ipynb  
+└── README.md  
 
 
 - **Dataset:** Contains the training and testing images, organized into `Kidney_stone` and `Normal` categories.
