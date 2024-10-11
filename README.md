@@ -1,6 +1,6 @@
-# Kidney Stone Detection Model
+# Kidney Stone Detection Model using KidneyNet-V
 
-This project aims to develop an automated kidney stone detection system using deep learning and visual explanation techniques. The system is built using the Fastai library with a ResNet34 architecture. It can classify CT images of kidneys into two categories: those with kidney stones and those without.
+This project aims to develop an efficient and lightweight kidney stone detection system using the KidneyNet-V model, which is based on the MobileNetV2 architecture. The system is capable of classifying CT images of kidneys into two categories: those with kidney stones and those without.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ This project aims to develop an automated kidney stone detection system using de
 
 The project directory is organized as follows:
 
-Kidney_Stone_Detection_Model/  
+Kidney_Stone_Detection/  
 │  
 ├── Dataset/  
 │   ├── Train/  
@@ -29,9 +29,10 @@ Kidney_Stone_Detection_Model/
 │  
 ├── Saved_Models/  
 │   └── models/  
-│       └── Mark_IV_epoch_10.pth  
+│       └── Mark_VI_KidneyNetV.pth  
 │  
-├── Kidney_stone_detection_model.ipynb  
+├── Kidney_Stone_Detection_KidneyNetV_Model.ipynb  
+├── Evaluating_KidneyNetV_Model.ipynb
 └── README.md  
 
 
@@ -49,6 +50,7 @@ To run this project, you need to have the following installed:
 - PyTorch
 - scikit-learn
 - Matplotlib
+- Streamlit (for the web interface)
 
 
 ## Dataset
@@ -59,11 +61,13 @@ The dataset is divided into training and testing sets, each containing two categ
 
 
 ## Training the Model
-The model is trained using the Fastai library with a ResNet34 architecture. The training process includes data augmentation and uses accuracy as the metric. The trained model is saved in the `Saved_Models/models` directory.
+The KidneyNet-V model is based on the MobileNetV2 architecture, optimized for lightweight and efficient performance. The training process involves data augmentation (rotation, flipping, zooming) to increase the model's robustness. The model was trained to maximize accuracy and its performance was evaluated using various metrics.  The trained model is saved in the `Saved_Models/models` directory.
 
 
 ## Using the Model
-You can use the trained model to predict kidney stones in new images. The model takes an image file path as input, performs necessary data augmentation, and displays the prediction along with the input image.
+You can use the trained KidneyNet-V model to predict kidney stones in new CT images. The model takes an image file path as input, applies the necessary data preprocessing, and provides the prediction along with a visual output.
+
+To make predictions, run the model using the provided Streamlit-based web interface. The user can upload an image to receive a real-time prediction on whether kidney stones are present.
 
 ## Evaluation Metrics
 The model is evaluated using precision, recall, F1 score, and a confusion matrix. These metrics provide a comprehensive assessment of the model's performance on the test set.
@@ -71,9 +75,10 @@ The model is evaluated using precision, recall, F1 score, and a confusion matrix
 ## Results
 After evaluating the model on the test set, the following metrics were obtained:
 
-- Precision: 0.9383
-- Recall: 0.9364
-- F1 Score: 0.9362
+- Accuracy: 99.71%
+- Precision: 0.9971
+- Recall: 0.9971
+- F1 Score: 0.9971
 
 ## Acknowledgments
-This project utilizes the Fastai library and ResNet34 architecture, both of which are instrumental in building and training the deep learning model for kidney stone detection. Special thanks to the creators and maintainers of these tools and libraries.
+This project utilizes the PyTorch framework and MobileNetV2 architecture, which were crucial for building and training the KidneyNet-V model. Special thanks to the creators and maintainers of these tools and libraries.
