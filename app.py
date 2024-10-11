@@ -4,7 +4,7 @@ from pathlib import Path
 import io
 import time
 
-# Define your model class
+# model class
 class KidneyNetV(nn.Module):
     def __init__(self):
         super().__init__()
@@ -20,7 +20,7 @@ class KidneyNetV(nn.Module):
         x = x.view(x.size(0), -1)  # Flatten the output
         return self.custom_layers(x)
 
-# Load your model
+# Loading the model
 def load_model(model_path, model_name):
     try:
         dls = ImageDataLoaders.from_folder('Dataset', train='Train', valid='Test',
