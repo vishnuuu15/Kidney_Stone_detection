@@ -65,7 +65,7 @@ if uploaded_file is not None:
             with st.spinner("Loading model and making predictions..."):
                 time.sleep(1)  # Simulate loading time
                 # Load the model
-                model_path = Path(r'C:\Users\vishn\Desktop\Automated kidney Stone Detection with deep learning and visual explanation\Kidney_Stone_Detection_Model\Saved_Models\models')
+                model_path = Path(r'C:\Users\vishn\Desktop\B.Tech - College Chetha\Vignana Pradarshanalu\GitHub Codes\Kidney_Stone_detection\Saved_Models\models')
                 model_name = 'Mark_VI_KidneyNetV'
                 learn = load_model(model_path, model_name)
 
